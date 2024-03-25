@@ -49,7 +49,7 @@
 
         <!-- Right elements -->
         <div class="d-flex align-items-center">
-            <button class="btn d-flex align-items-center justify-content-center gap-2 rounded-4" id="btnSubmit">
+            <button class="btn d-flex align-items-center justify-content-center gap-2 rounded-4" id="btnSubmit" onclick="window.location.href ='./submit.html';">
                 <div class="fs-5 fw-bold plus">+</div>
                 <div class="text text-center ">Submit Recipe</div>
             </button>
@@ -66,14 +66,10 @@
         <div class="col-md-4" id="img-1" style="width: 45%; height: 100%; border-radius: 25px;"></div>
         <article id="article">
             <div class="Title" style="color:#FF4A00;display: flex ;justify-content: center;">
-                <p style="font-weight: bold ; font-size: 20px;">Pizza Bar Mozzarella</p>
+                <p style="font-weight: bold ; font-size: 20px;" id="titleDetail"></p>
             </div>
             <div class=" description" style="display: block ;font-weight: bold; font-size: 15px;">
-                <p style="text-align: left;">The Pizza Bar Mozzarella is a classic pizza featuring fresh
-                    mozzarella cheese, tangy tomato sauce, and aromatic Italian herbs
-                    on a crispy crust. Its harmonious blend of flavors makes it a favorite
-                    choice for pizza enthusiasts, offering irresistible taste and texture
-                    in every bite.</p>
+                <p style="text-align: left;" id="description"></p>
             </div>
             <div class="container-fluid Right" style="height: auto; width: auto;background-color:#E4E4E4;padding-bottom: 120px ">
                 <div class="all" style="background-color:#E4E4E4 ">
@@ -88,22 +84,21 @@
                     <div class="Ingredients"  >
                         <p class="fw-bold">Ingredients</p>
                         <div class="DetailsIngredients" style="font-size: 10px ;font-weight: bold;" >
-                            <p>500 grams mozzarella cheese</p>
-                            <p>10 slices mushrooms</p>
-                            <p>3 bell peppers (assorted colors)</p>
-                            <p>1 tablespoon extra virgin olive oil</p>
-                            <p>1 teaspoon cornmeal (for dusting)</p>
+                            <p id="ingredient1"></p>
+                            <p id="ingredient2"></p>
+                            <p id="ingredient3"></p>
+                            <p id="ingredient4"></p>
+                            <p id="ingredient5"></p>
                         </div>
                     </div>
                     <div class="Steps" >
                         <p class="fw-bold">Steps</p>
                         <div class="DetailsSteps" style="font-size: 10px ;font-weight: bold;" >
-                                <p>1. Mix flour, yeast, salt, water, and oil for pizza dough.</p>
-                                <p>2. Knead until smooth, let rise.</p>
-                                <p>3. Shred cheese, slice mushrooms, peppers.</p>
-                                <p>4. Roll out dough, add toppings.</p>
-                                <p>5. Bake until crust is golden, Cool slightly, slice,
-                                and enjoy!</p>
+                                <p id="step1"></p>
+                                <p id="step2"></p>
+                                <p id="step3"></p>
+                                <p id="step4"></p>
+                                <p id="step5"></p>
                         </div>
                     </div>
                 </div>
@@ -122,11 +117,7 @@
                 <p style="font-weight: bold ;margin: 0;" >Your rate</p>
             </div>
             <div class="stars" style=" margin-left: 190px;" >
-                <img src="../Images/star.png" class="img-fluid" style="width: 30px ;">
-                <img src="../Images/star.png" class="img-fluid" style="width: 30px ;">
-                <img src="../Images/blackstar.png" class="img-fluid" style="width: 30px ;">
-                <img src="../Images/blackstar.png" class="img-fluid" style="width: 30px ;">
-                <img src="../Images/blackstar.png" class="img-fluid" style="width: 30px ;">
+                
             </div>
         </div>
         <button type="button" class="btn btn-primary" style="background-color:#FF4A00;border-color: #FF4A00 ; margin-left: 190px; margin-top: 25px ;border-radius: 15px ;font-weight: 500 ;" >Submit</button>
@@ -134,7 +125,6 @@
 
     </div>
 </div>
-</body>
 <footer class="text-center">
     <div class="container">
         <div class="logo-container">
@@ -169,7 +159,9 @@
         <p>&copy; 2024 Your Website. All rights reserved.</p>
     </div>
 </footer>
-
+<script src="../script.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
 
 
